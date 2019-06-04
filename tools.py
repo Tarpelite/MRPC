@@ -26,7 +26,7 @@ def sample_data(sample_rate):
                 for line in out_lines:
                     writer.writerow(line)
 in_path = "paranmt/"
-out_path = "split_data/"
+out_path = "split_data_small/"
 
 def split_data(slice_num):
     data_path = "para-nmt-50m.txt"
@@ -61,4 +61,4 @@ def split_data(slice_num):
 
 
 if __name__ == "__main__":
-    split_data(8)
+    split_data(500)
